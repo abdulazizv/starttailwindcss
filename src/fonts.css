@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "DM sans Regular";
+    src: url('../fonts/DM_Sans/DMSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "DM sans Medium";
+    src: url("../fonts/DM_Sans/DMSans-Medium.ttf");
+}
+
+@font-face {
+    font-family:"DM sans Bold" ;
+    src: url("../fonts/DM_Sans/DMSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Rosario Bold";
+    src: url("../fonts/Rosario/Rosario-VariableFont_wght.ttf");
+}
