@@ -16,6 +16,7 @@ closeBtn.addEventListener("click", () => {
 window.addEventListener("click", (e) => {
   console.log(e.target.classList.contains("modal-window"));
   if (e.target.classList.contains("modal-window")) {
-    modalWindow.classList.toggle("shaker");
+    // modalContent.classList.toggle("shaker");
+    modalWindow.classList.toggle("hidden");
   }
 });
