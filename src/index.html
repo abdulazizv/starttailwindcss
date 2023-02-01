@@ -4,772 +4,170 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TAILWIND CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- BOXICON -->
+    <title>lesson-9</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- box icon -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <!-- FONTS -->
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rosario:wght@700&display=swap"
       rel="stylesheet"
     />
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="./styles/style.css" />
-    <title>organic food</title>
+
+    <!-- css shaker -->
+    <link rel="stylesheet" type="text/css" href="csshake.min.css" />
+    <!-- or from surge.sh -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://csshake.surge.sh/csshake.min.css"
+    />
   </head>
+
   <body>
-    <header class="py-3 bg-[#BB2339]">
-      <div class="container mx-auto items-center px-4 py-2">
-        <nav class="nav container flex justify-between">
-          <div class="">
+    <header class="py-12 shadow-md">
+      <div class="container bg-white mx-auto">
+        <nav class="nav flex justify-around items-center h-4">
+          <ul class="nav__list hidden justify-between w-1/4 sm:hidden md:flex">
+            <li class="nav__list--item">
+              <a
+                href="#"
+                class="nav__list--item-link hover:text-slate-400 active:text-green-700 duration-200"
+                >About us</a
+              >
+            </li>
+            <li class="nav__list--item">
+              <a
+                href="#"
+                class="nav__list--item-link hover:text-slate-400 active:text-green-700 duration-200"
+                >Service</a
+              >
+            </li>
+            <li class="nav__list--item">
+              <a
+                href="#"
+                class="nav__list--item-link hover:text-slate-400 active:text-green-700 duration-200"
+                >Menu</a
+              >
+            </li>
+            <li class="nav__list--item">
+              <a
+                href="#"
+                class="nav__list--item-link hover:text-slate-400 active:text-green-700 duration-200"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <a href="#" class="nav__logo">
             <img
-              src="./images/image 2.svg"
-              class="hover:scale-105 duration-200"
+              src="./images/planet-earth (1) 1.svg"
               alt="logo"
+              class="hover:scale-105 duration-200"
             />
-          </div>
-          <div class="flex align-middle items-center justify-center w-1/3">
-            <ul class="flex justify-between items-center w-full text-white">
-              <li
-                class="hover:text-slate-400 active:text-green-700 duration-200"
+          </a>
+
+          <ul class="nav__menu flex w-72 justify-between">
+            <li class="nav__menu--item">
+              <span
+                class="bg-green-100 h-10 w-10 flex justify-center items-center rounded-full"
               >
-                Menu
-              </li>
-              <li
-                class="hover:text-slate-400 active:text-green-700 duration-200"
+                <i class="bx bx-search text-lg"></i>
+              </span>
+            </li>
+            <li class="nav__menu--item">
+              <span
+                class="bg-green-100 h-10 w-10 flex justify-center items-center rounded-full"
               >
-                News
-              </li>
-              <li
-                class="hover:text-slate-400 active:text-green-700 duration-200"
+                <i class="bx bx-cart text-lg"></i>
+              </span>
+            </li>
+            <li class="nav__menu--item">
+              <button
+                class="register-btn bg-green-600 px-6 py-2 rounded-lg text-white hover:bg-green-700 active:text-yellow-300 duration-300 active:bg-green-800"
               >
-                About us
-              </li>
-              <li
-                class="hover:text-slate-400 active:text-green-700 duration-200"
-              >
-                Contact us
-              </li>
-              <li>
-                <button
-                  class="border rounded-full py-2 px-10 text-white hover:bg-white hover:text-black active:text-black duration-300 active:bg-green-100"
-                >
-                  Log in
-                </button>
-              </li>
-            </ul>
-          </div>
+                Regester Now
+              </button>
+            </li>
+          </ul>
         </nav>
-        <div
-          class="intro flex justify-between items-center mt-20 mb-20 text-white"
-        >
-          <div class="left">
-            <p class="font-bold">Chase the new Flavour</p>
-            <h1 class="font-bold text-[70px]">The Key To Fine Dining</h1>
-            <div class="w-[400px]">
-              <p class="">
-                Sit tellus lobortis sed senectus vivamus molestie. Condimentum
-                volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
-                aliquam amet tellus
-              </p>
-            </div>
-            <button class="border rounded-full py-1 px-6 mt-10 font-bold">
-              Explore Menu
-            </button>
-          </div>
-          <div class="right">
-            <img src="./images/food.png" alt="picture" />
-          </div>
-        </div>
       </div>
     </header>
-    <main>
-      <section class="bg-[#F8F8F8] pt-20 pb-20">
-        <div class="container mx-auto flex justify-between items-center">
-          <div class="flex">
-            <h1 class="text-5xl w-[347px] h-[48px] text-[#BB2339]">
-              Popular Dishes
-            </h1>
-          </div>
-          <div class="flex justify-center">
-            <div
-              class="bg-[#F8F8F8] w-10 h-10 border rounded-lg flex justify-center items-center"
-            >
-              <button><img src="./images/left.svg" alt="icon" /></button>
-            </div>
-            <div
-              class="bg-[#F8F8F8] ml-4 w-10 h-10 border rounded-lg flex items-center justify-center"
-            >
-              <button><img src="./images/right.svg" alt="icon" /></button>
-            </div>
-          </div>
+
+    <div
+      class="modal-window bg-[#0000007e] w-full min-h-screen fixed top-0 z-10 hidden"
+    >
+      <div
+        class="modal-content w-[800px] min-h-[580px] bg-white mx-auto mt-40 rounded-2xl overflow-hidden"
+      >
+        <div class="modal-header bg-slate-300 text-slate-800">
+          <h2
+            class="font-bold text-2xl uppercase text-slate-800 p-4 text-center"
+          >
+            Registration form
+          </h2>
         </div>
         <div
-          class="flex justify-around mx-auto container mt-5 py-4 bg-[#F8F8F8]"
+          class="modal-body bg-white min-h-[450px] flex justify-center items-center"
         >
-          <div
-            class="border w-[310px] h-[396px] p-5 text-center rounded-lg items-center bg-[#FFFFFF]"
-          >
-            <img src="./images/klipartz1.jpg" alt="picture" />
-            <p class="font-bold py-5">Barbecue Shish kebab Shashlik Skewer</p>
-            <ul class="flex justify-center">
-              <li class="py-5"><img src="./images/star.svg" alt="icon" / ></li>
-              <li class="py-5"><img src="./images/star.svg" alt="icon" / ></li>
-              <li class="py-5"><img src="./images/star.svg" alt="icon" / ></li>
-              <li class="py-5"><img src="./images/star.svg" alt="icon" /></li>
-              <li class="py-5">
-                <img src="./images/star-off.svg" alt="icon" />
-              </li>
-            </ul>
-            <h1 class="font-bold text-red-600">$12.00</h1>
-          </div>
-          <div
-            class="border w-[310px] h-[396px] p-5 ml-5 text-center rounded-lg items-center bg-[#FFFFFF]"
-          >
-            <img src="./images/klipartz2.jpg" alt="picture" />
-            <p class="font-bold py-5">Barbecue Shish kebab Shashlik Skewer</p>
-            <ul class="flex justify-center">
-              <li class="py-5"><img src="./images/star.svg" alt="icon" / ></li>
-              <li class="py-5"><img src="./images/star.svg" alt="icon" / ></li>
-              <li class="py-5"><img src="./images/star.svg" alt="icon" / ></li>
-              <li class="py-5"><img src="./images/star.svg" alt="icon" /></li>
-              <li class="py-5">
-                <img src="./images/star-off.svg" alt="icon" />
-              </li>
-            </ul>
-            <h1 class="font-bold text-red-600">$12.00</h1>
-          </div>
-          <div
-            class="border w-[310px] h-[396px] p-5 ml-5 text-center rounded-lg items-center bg-[#FFFFFF]"
-          >
-            <img src="./images/klipartz3.jpg" alt="picture" />
-            <p class="font-bold py-5">Barbecue Shish kebab Shashlik Skewer</p>
-            <ul class="flex justify-center">
-              <li class="py-5"><img src="./images/star.svg" alt="icon" / ></li>
-              <li class="py-5"><img src="./images/star.svg" alt="icon" / ></li>
-              <li class="py-5"><img src="./images/star.svg" alt="icon" / ></li>
-              <li class="py-5"><img src="./images/star.svg" alt="icon" /></li>
-              <li class="py-5">
-                <img src="./images/star-off.svg" alt="icon" />
-              </li>
-            </ul>
-            <h1 class="font-bold text-red-600">$12.00</h1>
-          </div>
-          <div
-            class="border w-[310px] h-[396px] p-5 ml-5 text-center rounded-lg items-center bg-[#FFFFFF]"
-          >
-            <img src="./images/klipartz_4.jpg" alt="picture" />
-            <p class="font-bold py-5">Barbecue Shish kebab Shashlik Skewer</p>
-            <ul class="flex justify-center">
-              <li class="py-5"><img src="./images/star.svg" alt="icon" / ></li>
-              <li class="py-5"><img src="./images/star.svg" alt="icon" / ></li>
-              <li class="py-5"><img src="./images/star.svg" alt="icon" / ></li>
-              <li class="py-5"><img src="./images/star.svg" alt="icon" /></li>
-              <li class="py-5">
-                <img src="./images/star-off.svg" alt="icon" />
-              </li>
-            </ul>
-            <h1 class="font-bold text-red-600">$12.00</h1>
-          </div>
-
-          <div
-            class="border w-[310px] h-[396px] p-5 ml-5 text-center rounded-lg items-center bg-[#FFFFFF]"
-          >
-            <img src="./images/klipartz_4.jpg" alt="picture" />
-            <p class="font-bold py-5">Barbecue Shish kebab Shashlik Skewer</p>
-            <ul class="flex justify-center">
-              <li class="py-5"><img src="./images/star.svg" alt="icon" / ></li>
-              <li class="py-5"><img src="./images/star.svg" alt="icon" / ></li>
-              <li class="py-5"><img src="./images/star.svg" alt="icon" / ></li>
-              <li class="py-5"><img src="./images/star.svg" alt="icon" /></li>
-              <li class="py-5">
-                <img src="./images/star-off.svg" alt="icon" />
-              </li>
-            </ul>
-            <h1 class="font-bold text-red-600">$12.00</h1>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container mx-auto pt-20 pb-20">
-          <div>
-            <h1 class="font-care text-[40px] text-[#BB2339]">
-              Our Regular Menu Pack
-            </h1>
-          </div>
-          <div class="flex justify-between mt-10">
-            <div class="border rounded-3xl px-5 py-2">
-              <button>All</button>
-            </div>
-            <div class="border rounded-3xl px-5 py-2">
-              <button>Shawarma</button>
-            </div>
-            <div class="border rounded-3xl px-5 py-2">
-              <button>Turk Kebab</button>
-            </div>
-            <div class="border rounded-3xl px-5 py-2">
-              <button>Hamburger Kebab</button>
-            </div>
-            <div class="border rounded-3xl px-5 py-2">
-              <button>Doner Kebab</button>
-            </div>
-            <div class="border rounded-3xl px-5 py-2">
-              <button>Shish kebab</button>
-            </div>
-            <div class="border rounded-3xl px-5 py-2">
-              <button>French fries Pizza</button>
-            </div>
-            <div class="border rounded-3xl px-5 py-2">
-              <button>Desserts</button>
-            </div>
-            <div class="border rounded-3xl px-5 py-2">
-              <button>Shish kebab</button>
-            </div>
-            <div class="border rounded-3xl px-5 py-2">
-              <button>French fries Pizza</button>
-            </div>
-            <div class="border rounded-3xl px-5 py-2">
-              <button>Desserts</button>
-            </div>
-          </div>
-          <!-- ------------------------------------ -->
-          <div class="row columns-5 pt-10">
-            <div
-              class="border w-[300px] h-[366px] p-5 text-center rounded-lg items-center bg-[#FFFFFF]"
-            >
-              <img src="./images/klipartz1.jpg" alt="picture" />
-              <p class="font-bold">Barbecue Shish kebab Shashlik Skewer</p>
-              <ul class="flex justify-center">
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5"><img src="./images/star.svg" alt="icon" /></li>
-                <li class="py-5">
-                  <img src="./images/star-off.svg" alt="icon" />
-                </li>
-              </ul>
-              <h1 class="font-bold text-red-600">$12.00</h1>
-            </div>
-            <div
-              class="border w-[300px] h-[366px] p-5 mt-5 text-center rounded-lg items-center bg-[#FFFFFF]"
-            >
-              <img src="./images/klipartz2.jpg" alt="picture" />
-              <p class="font-bold">Barbecue Shish kebab Shashlik Skewer</p>
-              <ul class="flex justify-center">
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5"><img src="./images/star.svg" alt="icon" /></li>
-                <li class="py-5">
-                  <img src="./images/star-off.svg" alt="icon" />
-                </li>
-              </ul>
-              <h1 class="font-bold text-red-600">$12.00</h1>
-            </div>
-
-            <div
-              class="border w-[300px] h-[366px] p-5 mt-5 text-center rounded-lg items-center bg-[#FFFFFF]"
-            >
-              <img src="./images/klipartz3.jpg" alt="picture" />
-              <p class="font-bold">Barbecue Shish kebab Shashlik Skewer</p>
-              <ul class="flex justify-center">
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5"><img src="./images/star.svg" alt="icon" /></li>
-                <li class="py-5">
-                  <img src="./images/star-off.svg" alt="icon" />
-                </li>
-              </ul>
-              <h1 class="font-bold text-red-600">$12.00</h1>
-            </div>
-
-            <div
-              class="border w-[300px] h-[366px] p-5 mt-5 text-center rounded-lg items-center bg-[#FFFFFF]"
-            >
-              <img src="./images/klipartz_4.jpg" alt="picture" />
-              <p class="font-bold">Barbecue Shish kebab Shashlik Skewer</p>
-              <ul class="flex justify-center">
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5"><img src="./images/star.svg" alt="icon" /></li>
-                <li class="py-5">
-                  <img src="./images/star-off.svg" alt="icon" />
-                </li>
-              </ul>
-              <h1 class="font-bold text-red-600">$12.00</h1>
-            </div>
-            <div
-              class="border w-[300px] h-[366px] p-5 mt-5 text-center rounded-lg items-center bg-[#FFFFFF]"
-            >
-              <img src="./images/klipartz_4.jpg" alt="picture" />
-              <p class="font-bold">Barbecue Shish kebab Shashlik Skewer</p>
-              <ul class="flex justify-center">
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5"><img src="./images/star.svg" alt="icon" /></li>
-                <li class="py-5">
-                  <img src="./images/star-off.svg" alt="icon" />
-                </li>
-              </ul>
-              <h1 class="font-bold text-red-600">$12.00</h1>
-            </div>
-            <div
-              class="border w-[300px] h-[366px] p-5 mt-5 text-center rounded-lg items-center bg-[#FFFFFF]"
-            >
-              <img src="./images/klipartz1.jpg" alt="picture" />
-              <p class="font-bold">Barbecue Shish kebab Shashlik Skewer</p>
-              <ul class="flex justify-center">
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5"><img src="./images/star.svg" alt="icon" /></li>
-                <li class="py-5">
-                  <img src="./images/star-off.svg" alt="icon" />
-                </li>
-              </ul>
-              <h1 class="font-bold text-red-600">$12.00</h1>
-            </div>
-            <div
-              class="border w-[300px] h-[366px] p-5 mt-5 text-center rounded-lg items-center bg-[#FFFFFF]"
-            >
-              <img src="./images/klipartz2.jpg" alt="picture" />
-              <p class="font-bold">Barbecue Shish kebab Shashlik Skewer</p>
-              <ul class="flex justify-center">
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5"><img src="./images/star.svg" alt="icon" /></li>
-                <li class="py-5">
-                  <img src="./images/star-off.svg" alt="icon" />
-                </li>
-              </ul>
-              <h1 class="font-bold text-red-600">$12.00</h1>
-            </div>
-
-            <div
-              class="border w-[300px] h-[366px] p-5 mt-5 text-center rounded-lg items-center bg-[#FFFFFF]"
-            >
-              <img src="./images/klipartz3.jpg" alt="picture" />
-              <p class="font-bold">Barbecue Shish kebab Shashlik Skewer</p>
-              <ul class="flex justify-center">
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5"><img src="./images/star.svg" alt="icon" /></li>
-                <li class="py-5">
-                  <img src="./images/star-off.svg" alt="icon" />
-                </li>
-              </ul>
-              <h1 class="font-bold text-red-600">$12.00</h1>
-            </div>
-
-            <div
-              class="border w-[300px] h-[366px] p-5 mt-5 text-center rounded-lg items-center bg-[#FFFFFF]"
-            >
-              <img src="./images/klipartz_4.jpg" alt="picture" />
-              <p class="font-bold">Barbecue Shish kebab Shashlik Skewer</p>
-              <ul class="flex justify-center">
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5"><img src="./images/star.svg" alt="icon" /></li>
-                <li class="py-5">
-                  <img src="./images/star-off.svg" alt="icon" />
-                </li>
-              </ul>
-              <h1 class="font-bold text-red-600">$12.00</h1>
-            </div>
-            <div
-              class="border w-[300px] h-[366px] p-5 mt-5 text-center rounded-lg items-center bg-[#FFFFFF]"
-            >
-              <img src="./images/klipartz_4.jpg" alt="picture" />
-              <p class="font-bold">Barbecue Shish kebab Shashlik Skewer</p>
-              <ul class="flex justify-center">
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5"><img src="./images/star.svg" alt="icon" /></li>
-                <li class="py-5">
-                  <img src="./images/star-off.svg" alt="icon" />
-                </li>
-              </ul>
-              <h1 class="font-bold text-red-600">$12.00</h1>
-            </div>
-            <div
-              class="border w-[300px] h-[366px] p-5 mt-5 text-center rounded-lg items-center bg-[#FFFFFF]"
-            >
-              <img src="./images/klipartz1.jpg" alt="picture" />
-              <p class="font-bold">Barbecue Shish kebab Shashlik Skewer</p>
-              <ul class="flex justify-center">
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5"><img src="./images/star.svg" alt="icon" /></li>
-                <li class="py-5">
-                  <img src="./images/star-off.svg" alt="icon" />
-                </li>
-              </ul>
-              <h1 class="font-bold text-red-600">$12.00</h1>
-            </div>
-            <div
-              class="border w-[300px] h-[366px] p-5 mt-5 text-center rounded-lg items-center bg-[#FFFFFF]"
-            >
-              <img src="./images/klipartz2.jpg" alt="picture" />
-              <p class="font-bold">Barbecue Shish kebab Shashlik Skewer</p>
-              <ul class="flex justify-center">
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5"><img src="./images/star.svg" alt="icon" /></li>
-                <li class="py-5">
-                  <img src="./images/star-off.svg" alt="icon" />
-                </li>
-              </ul>
-              <h1 class="font-bold text-red-600">$12.00</h1>
-            </div>
-
-            <div
-              class="border w-[300px] h-[366px] p-5 mt-5 text-center rounded-lg items-center bg-[#FFFFFF]"
-            >
-              <img src="./images/klipartz3.jpg" alt="picture" />
-              <p class="font-bold">Barbecue Shish kebab Shashlik Skewer</p>
-              <ul class="flex justify-center">
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5"><img src="./images/star.svg" alt="icon" /></li>
-                <li class="py-5">
-                  <img src="./images/star-off.svg" alt="icon" />
-                </li>
-              </ul>
-              <h1 class="font-bold text-red-600">$12.00</h1>
-            </div>
-
-            <div
-              class="border w-[300px] h-[366px] p-5 mt-5 text-center rounded-lg items-center bg-[#FFFFFF]"
-            >
-              <img src="./images/klipartz_4.jpg" alt="picture" />
-              <p class="font-bold">Barbecue Shish kebab Shashlik Skewer</p>
-              <ul class="flex justify-center">
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5"><img src="./images/star.svg" alt="icon" /></li>
-                <li class="py-5">
-                  <img src="./images/star-off.svg" alt="icon" />
-                </li>
-              </ul>
-              <h1 class="font-bold text-red-600">$12.00</h1>
-            </div>
-            <div
-              class="border w-[300px] h-[366px] p-5 mt-5 text-center rounded-lg items-center bg-[#FFFFFF]"
-            >
-              <img src="./images/klipartz_4.jpg" alt="picture" />
-              <p class="font-bold">Barbecue Shish kebab Shashlik Skewer</p>
-              <ul class="flex justify-center">
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5">
-                  <img src="./images/star.svg" alt="icon" / >
-                </li>
-                <li class="py-5"><img src="./images/star.svg" alt="icon" /></li>
-                <li class="py-5">
-                  <img src="./images/star-off.svg" alt="icon" />
-                </li>
-              </ul>
-              <h1 class="font-bold text-red-600">$12.00</h1>
-            </div>
-          </div>
-          <!-- =================== -->
-        </div>
-      </section>
-      <section class="bg-[#F8F8F8] pt-20 pb-20">
-        <div class="container mx-auto">
-          <h1 class="font-bold text-center">Testimony</h1>
-          <p class="text-[48px] text-center">Happy customers</p>
-          <div class="container mx-auto flex mt-5">
-            <div class="border shadow p-5 m-5 rounded-lg bg-[#FFFFFF]">
-              <h1 class="font-bold">Maria</h1>
-              <p class="mt-2 opacity-30">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
-                harum reiciendis sint provident illum magni nulla blanditiis
-                adipisci tempore nam!
+          <form action="#" class="bg-slate-200 min-w-[80%] p-3 text-center">
+            <label for="fullname" class="w-full">
+              <p class="mb-2 text-left ml-16">
+                Enter fullname <span class="text-red-800">*</span>
               </p>
-              <div class="mt-2 opacity-30">
-                <i class="bx bx-calendar">06/02/2022</i>
-                <i class="bx bx-time-five">11:15</i>
-                <i class="bx bx-low-vision">222</i>
-              </div>
-            </div>
-            <div class="border shadow p-5 m-5 rounded-lg bg-[#FFFFFF]">
-              <h1 class="font-bold">Maria</h1>
-              <p class="mt-2 opacity-30">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
-                harum reiciendis sint provident illum magni nulla blanditiis
-                adipisci tempore nam!
+              <input
+                type="text"
+                class="w-[80%] mx-auto p-3 mb-4 focus:ring-4 focus:ring-sky-400 rounded-md outline-none"
+                id="fullname"
+              />
+            </label>
+
+            <label for="tel" 6 class="w-full">
+              <p class="mb-2 text-left ml-16">
+                Enter phone number <span class="text-red-600">*</span>
               </p>
-              <div class="mt-2 opacity-30">
-                <i class="bx bx-calendar">06/02/2022</i>
-                <i class="bx bx-time-five">11:15</i>
-                <i class="bx bx-low-vision">222</i>
-              </div>
-            </div>
-            <div
-              class="border-2 py-2 px-3 shadow p-5 m-5 rounded-lg bg-[#FFFFFF]"
-            >
-              <h1 class="font-bold">Maria</h1>
-              <p class="mt-2 opacity-30">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
-                harum reiciendis sint provident illum magni nulla blanditiis
-                adipisci tempore nam!
+              <input
+                type="tel"
+                class="w-[80%] mx-auto p-3 mb-4 focus:ring-4 focus:ring-sky-400 rounded-md outline-none border"
+                id="tel"
+                placeholder="enter phone number"
+              />
+            </label>
+            <label for="password" 6 class="w-full">
+              <p class="mb-2 text-left ml-16">
+                Enter password <span class="text-red-600">*</span>
               </p>
-              <div class="mt-2 opacity-30">
-                <i class="bx bx-calendar">06/02/2022</i>
-                <i class="bx bx-time-five">11:15</i>
-                <i class="bx bx-low-vision">222</i>
-              </div>
-            </div>
-          </div>
-          <div class="flex justify-center">
-            <div class="border-2 py-2 px-3 rounded">
-              <img src="./images/left.svg" alt="" />
-            </div>
-            <div class="flex ml-5 mr-5 m-1">
-              <p class="m-1">01</p>
-              <p class="m-1">-</p>
-              <p class="m-1">02</p>
-              <p class="m-1">03</p>
-              <p class="m-1">04</p>
-            </div>
-            <div class="border py-2 px-3 rounded">
-              <img src="./images/right.svg" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container mx-auto pt-20 pb-20">
-          <h1 class="font-bold text-center">News</h1>
-          <p class="text-[48px] text-center text-red-700">Gerícht updates</p>
-          <div class="flex justify-around mt-20">
-            <div class="w-[410px] h-[584px] border rounded-xl shadow">
-              <img
-                src="./images/paul-hermann-jeiqzOgwwKU-unsplash 2.png"
-                alt="photo"
+              <input
+                type="password"
+                class="w-[80%] mx-auto p-3 mb-4 focus:ring-4 focus:ring-sky-400 rounded-md outline-none border"
+                id="password"
+                placeholder="enter password"
               />
-              <div class="p-5">
-                <h1 class="font-bold text-[24px]">
-                  Tips For Prepping And Caring For Your Grill
-                </h1>
-                <p class="text-[14px] opacity-30">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Soluta perspiciatis inventore id fuga perferendis quasi omnis
-                  illum enim, modi provident?
-                </p>
-                <div class="flex justify-between mt-5">
-                  <div>
-                    <h3 class="text-red-800">Read more</h3>
-                  </div>
-                  <div class="opacity-30">16 Apr 2021</div>
-                </div>
-              </div>
-            </div>
-            <div class="w-[410px] h-[584px] border rounded-xl shadow">
-              <img
-                src="./images/paul-hermann-jeiqzOgwwKU-unsplash 2.png"
-                alt="photo"
-              />
-              <div class="p-5">
-                <h1 class="font-bold text-[24px]">
-                  Tips For Prepping And Caring For Your Grill
-                </h1>
-                <p class="text-[14px] opacity-30">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Soluta perspiciatis inventore id fuga perferendis quasi omnis
-                  illum enim, modi provident?
-                </p>
-                <div class="flex justify-between mt-5">
-                  <div>
-                    <h3 class="text-red-800">Read more</h3>
-                  </div>
-                  <div class="opacity-30">16 Apr 2021</div>
-                </div>
-              </div>
-            </div>
-            <div class="w-[410px] h-[584px] border rounded-xl shadow">
-              <img
-                src="./images/paul-hermann-jeiqzOgwwKU-unsplash 2.png"
-                alt="photo"
-              />
-              <div class="p-5">
-                <h1 class="font-bold text-[24px]">
-                  Tips For Prepping And Caring For Your Grill
-                </h1>
-                <p class="text-[14px] opacity-30">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Soluta perspiciatis inventore id fuga perferendis quasi omnis
-                  illum enim, modi provident?
-                </p>
-                <div class="flex justify-between mt-5">
-                  <div>
-                    <h3 class="text-red-800">Read more</h3>
-                  </div>
-                  <div class="opacity-30">16 Apr 2021</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex justify-center mt-10">
+            </label>
             <button
-              class="border font-bold border-red-500 rounded-full py-2 px-6"
+              class="btn bg-green-600 px-4 py-2 my-4 mx-auto rounded-lg text-white font-bold block w-[80%] mt-4 hover:bg-green-800"
+              type="submit"
             >
-              View more
+              SIGN UP
             </button>
-          </div>
+          </form>
         </div>
-      </section>
-      <section>
-        <div class="pt-20 pb-20">
-          <img class="opacity-[0.4px]" src="./images/Mask Group.jpg" alt="" />
+        <div class="modal-footer bg-slate-200 text-right p-2">
+          <button
+            class="close-btn bg-red-600 py-2 px-16 rounded-lg m-3 font-bold hover:bg-red-700 focus:ring-2 focus:ring-red-400 text-white"
+          >
+            Close
+          </button>
         </div>
-      </section>
-      <section class="bg-[#F8F8F8] pt-20 pb-20">
-        <div class="container mx-auto flex justify-around">
-          <div class="w-[500px] h-[500px] flex items-center">
-            <div>
-              <h1 class="font-bold text-[23px]">Instagram</h1>
-              <p class="text-[48px] mt-5">Photo Gallery</p>
-              <p class="text-[16px] opacity-30 mt-5">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
-                esse cupiditate consectetur adipisicing elit. Eos esse
-                cupiditate sit amet consectetur.
-              </p>
-              <button
-                class="border text-bold border-red-700 rounded-full mt-5 py-2 px-6"
-              >
-                View more
-              </button>
-            </div>
-          </div>
-          <div class="">
-            <img
-              src="./images/christian-coquet-p1sdBSnS3Qc-unsplash.jpg"
-              alt="photo"
-            />
-          </div>
-          <div>
-            <img
-              src="./images/christian-coquet-p1sdBSnS3Qc-unsplash.jpg"
-              alt="photo"
-            />
-          </div>
-          <div>
-            <img
-              src="./images/michele-blackwell-rAyCBQTH7ws-unsplash 2.jpg"
-              alt="photo"
-            />
-          </div>
-          <!-- <div>
-            <img src="./images/cala-w6ftFbPCs9I-unsplash.jpg" alt="photo" />
-          </div> -->
-        </div>
-      </section>
-    </main>
+      </div>
+    </div>
   </body>
+  <script src="./script/index.js"></script>
 </html>

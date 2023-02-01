@@ -1,4 +1,8 @@
 body {
-    font-family: 'DM sans Regular';
-    font-weight: 400;
+  font-family: "DM sans Regular", sans-serif;
+  font-weight: 500;
+}
+
+.shaker {
+  transform: translate(-20px, -20px);
 }
